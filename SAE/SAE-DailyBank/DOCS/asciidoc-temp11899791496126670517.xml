@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><?asciidoc-toc?><?asciidoc-numbered?><article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Documentation utilisateur V1</title>
+<date>2022-06-12</date>
+</info>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="150" contentwidth="300" fileref="../img/Logo_IUT_Blagnac.png"/>
+</imageobject>
+<textobject><phrase>Logo IUT</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<section xml:id="_présentation_générale_de_lapplication">
+<title>Présentation générale de l’application</title>
+<simpara>L’application DailyBank est un outil de banque en ligne qui est déjà existant mais qui est maintenant obsolète c’est pour cela qu’une nouvelle version de cette application est en développement avec des ajouts de fonctionnalités ainsi que des amélioration de l’expérience utilisateur tel que l’ergonomie, la fiabilité et que l’application soit sûre.</simpara>
+</section>
+<section xml:id="_rôle_de_lapplication">
+<title>Rôle de l’application</title>
+<simpara>L’application de banque en ligne DailyBank est la jonction entre l’utilisateur et la banque pour ce faire elle doit permettre une communication fluide sans friction et simple d’utilisation pour les clients ainsi que pour les employés de la banque</simpara>
+</section>
+<section xml:id="_installation_utilisation">
+<title>Installation utilisation</title>
+<simpara>L’utilisation d’une application se doit simple c’est pour cela que l’application DailyBank est installable en quelques étapes seulement.</simpara>
+<simpara>Il suffit à l’utilisateur de se rendre sur le site de la banque DailyBank, il devra ensuite se rendre sur la section Téléchargement et télécharger le fichier DailyBank.jar.</simpara>
+<simpara>Une fois téléchargé le fichier peut être ouvert et de là, l’utilisateur n’a qu’a se connecté est accède directement à l’application.</simpara>
+</section>
+<section xml:id="_fonctionnement">
+<title>Fonctionnement</title>
+<simpara>Au lancement de l’application l’utilisateur arrive sur la page principale, il ne peut rient faire a par se connecter, voir la fênetre d’aide ou quitter l’application.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/fenetre_principale_application.png"/>
+</imageobject>
+<textobject><phrase>fenetre main</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Pour se connecter, l’utilisateur devra appuyer sur le bouton connexion ou dans la barre de menu l’option connnexion. Une fois le bon nom d’utilisateur et le bon mot de passe rentrés l’utilisateur se connectera à son compte.</simpara>
+<section xml:id="_se_connecter_à_un_compte">
+<title>Se connecter à un compte</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/connexion_application.png"/>
+</imageobject>
+<textobject><phrase>fenetre main connexion</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/identification_application.png"/>
+</imageobject>
+<textobject><phrase>fenetre identification</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Une fois connecté, l’utilisateur pourra voir les information sur son agence bancaire ainsi que ses employés, Une option dans le menu Gestion sera dégrisée ainsi que l’option de se déconnecter</simpara>
+</section>
+<section xml:id="_se_déconnnecter_dun_compte">
+<title>Se déconnnecter d’un compte</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/fenetre_principale_application_connecté.png"/>
+</imageobject>
+<textobject><phrase>fenetre identification</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Dans le menu de gestion, l’utilisateur est confronté à plusieurs option, il peut tout d’abord retourner à la fenêtre d’accueil, il peut rechercher des client grâce à leurs numéro, nom ou prénom.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/gestion.png"/>
+</imageobject>
+<textobject><phrase>fenetre gestion</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_voir_les_comptes_courants_du_client">
+<title>Voir les comptes courants du client</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/comptes.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_générer_un_relevé_des_information_du_compte">
+<title>Générer un relevé des information du compte</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/releve.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes relevé</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_supprimer_un_des_comptes">
+<title>Supprimer un des comptes</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/supprimer_compte.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes supprimer</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_créer_un_compte_courant">
+<title>Créer un compte courant</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/creer_compte.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes creer</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/creer.png"/>
+</imageobject>
+<textobject><phrase>fenetre creer</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_voir_les_opération_ainsi_que_lhistorique_du_compte">
+<title>voir les opération ainsi que l’historique du compte.</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/operations_compte.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes operations</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_voir_lhistorique_des_opérations_sur_le_compte_dépôts_retraits_et_virements">
+<title>voir l’historique des opérations sur le compte ( dépôts , retraits et virements )</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/operations_operations.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes operations</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_faire_des_débits_crédits_et_des_virements_vers_un_compte_courant_lui_appartenant">
+<title>faire des débits, crédits et des virements vers un compte courant lui appartenant</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/operations_DCV.png"/>
+</imageobject>
+<textobject><phrase>fenetre comptes débits crédits virement</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_débit_en_espèces_ou_en_carte_bleue">
+<title>Débit en espèces ou en carte bleue</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/debit.png"/>
+</imageobject>
+<textobject><phrase>fenetre debit</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_crédit_en_espèce_ou_en_carte_bleue">
+<title>Crédit en espèce ou en carte bleue</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/credit.png"/>
+</imageobject>
+<textobject><phrase>fenetre credit</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_virement_dun_compte_à_un_autre">
+<title>Virement d’un compte à un autre</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/virement.png"/>
+</imageobject>
+<textobject><phrase>fenetre virement</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>A présent nous allons nous pencher sur le côté gestion des employés, certains utilisateur peuvent être des chefs d’agences et donc il peuvent gérer des employés. Tout d’abord il auront accès au bouton employés dans le menu gestion qui est grisé pour les utilisateurs normaux</simpara>
+</section>
+<section xml:id="_gestion_employés">
+<title>Gestion employés</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/gestion_employés.png"/>
+</imageobject>
+<textobject><phrase>fenetre menu employés</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/employes.png"/>
+</imageobject>
+<textobject><phrase>fenetre employés</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+<section xml:id="_le_chef_dagence_à_loption_de_modifier_un_employé_de_leffacer_ou_den_créer_un_nouveau">
+<title>le chef d’agence à l’option de modifier un employé, de l’effacer ou d’en créer un nouveau</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/employe_men.png"/>
+</imageobject>
+<textobject><phrase>fenetre modifier effacer nouveau employés</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata contentdepth="400" contentwidth="600" fileref="../img/modifier_employe.png"/>
+</imageobject>
+<textobject><phrase>fenetre modifier employés</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</article>
