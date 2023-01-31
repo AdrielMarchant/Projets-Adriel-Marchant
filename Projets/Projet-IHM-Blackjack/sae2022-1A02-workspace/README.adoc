@@ -1,0 +1,58 @@
+= Projet DEV S2 : DailyBank
+
+<<<
+
+image::img/Logo_IUT_Blagnac.png[Logo IUT, 100,50]
+
+Project by:
+
+    Adriel Marchant
+
+    Elvis Pichou
+
+    Marco Valle
+
+== Livrables
+
+[cols="1,2,1,10",options=header]
+|===
+| Date    | Nom         |  Lien  | Retour
+| 03/04   | Gantt V1    | https://github.com/IUT-Blagnac/sae2022-1A02/blob/main/GANTT/Gantt-V1.pdf | J'attends pour le moment un GANTT par version ! Attention il manque les tâches de développement détaillés : qui va coder quoi dans la V1. Attention à l'affichage, les tâches doivent être affectées. L'échelle en jour n'est pas adaptée à une SAE.
+|         | CdC V1      | https://github.com/IUT-Blagnac/sae2022-1A02/blob/main/CDCU/CDCU%20V1.adoc | Revoir les éléments d’évaluation pour le CDCU c’est très insuffisant. Il manque des infos en entête. Pour le contexte il s’agit d’étudier le contexte economique et concurrentiel de l’organisation . Les objectifs reprennent le pourquoi de l’appli (intérêt stratégique par exemple) et la problématique est liée au dev d’une appli déjà existante. Pour l’existant présenter le UC V0, donnez les utilisateurs, leur rôle …​ Idem pour V1, expliquer les fonctionnalités et les règles de gestion liées (pourquoi rendre inactif un client et ne pas le supprimer par ex.). Pour les contraintes : lister les contraintes techniques, juridiques, et organisationnelles par rapport à votre équipe. Listez dates et livrables attendus. Bref tout reste à faire ... EP  
+|         | Suivi Projet |                                   |  Utiliser le formalisme demandé pour votre repository 1A02 au lieu de mazebank. Gestion des issues ok. Pensez à revoir l'arborescence du repository par version.            
+| 22/04  | CdC V2/V3 final|                 https://github.com/IUT-Blagnac/sae2022-1A02/blob/main/CDCU/CDCU_V2.adoc                        |  0,5/2	Revoir les éléments attendus dans page de garde. CF retour V1!
+1,5/2	retard lien. Nom teams à modifier. Les remarques V1 n'ont pas été prises en compte !!
+4/4	contexte OK
+2/4	Manque un paragraphe dédié à l'existant avec UC  V0, traité dans la présentation ici … ce n'est pas sa plaçe.
+0/4	Les besoins ne sont pas présentés !! C'est l'object d'un CDCU !!
+2/4	Il manque les contraintes organisationnelles, avec dates  et liste des livrables attendus
+	
+10/20	
+
+|         | Gantt V2    |                           |     
+|         | Gantt V3 |         |     
+|         | Doc. Tec. V1 |        |    
+|         | Doc User V1    |        |
+|         | Recette V1  |                      | 
+|         | Suivi projet|   | 
+| 22/05   | Gantt V2  à jour    |       | 
+|         | Doc. Util. V1 |         |         
+|         | Doc. Tec. V1 |                |     
+|         | Code V1     |                     | 
+|         | Recette V1 |                      | 
+|         | Gantt V3 à jour   |                      | 
+|         | `jar` projet |    | 
+| 05/06   | Gantt V3 à Jour  |    |  
+|         | Doc. Util. V2 |         |           
+|         | Doc. Tec. V2 |    |     
+|         | Code V2     |                       |
+|         | Recette V2  |   |
+|         | `jar` projet |     |
+|12/06   | Gantt V3 à Jour  |    |  
+|         | Doc. Util. V3 |         |           
+|         | Doc. Tec. V3 |    |     
+|         | Code V3     |                       |
+|         | Recette V3  |   |
+|         | `jar` projet |     |
+|===
+
