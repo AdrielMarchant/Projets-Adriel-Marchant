@@ -1,0 +1,173 @@
+:toc:
+:toc-title: Sommaire
+
+== code pour tester le code 
+
+=== python
+
+import importlib
+efficacite_46 = importlib.import_module("efficacite-46")
+efficacite_96 = importlib.import_module("efficacite-96")
+#efficacite_126 = importlib.import_module("efficacite-126")
+sobriete_164 = importlib.import_module("sobriete-164")
+
+test = ["un espace, deux  espaces, trois   espaces",
+" un espace à l'avant , un espace à la fin ",
+"  deux espaces à l'avant, deux espaces à l'arrière  ",
+" des  espaces  séparés  par  un  caractère  seulement  a b c d e f g ",
+" deux  espaces  séparés  par  un  caractère  seulement  a  b  c  d  e  f  g  "]
+
+for i in test :
+    print(efficacite_46.erase2(i)+"| 46")
+    print(efficacite_96.erase(i)+"| 96")
+    #print(efficacite_126.erase2(i)+"| 126")
+    print(sobriete_164.bonmot3(i)+"| 164")
+
+=== java
+
+package eraser;
+
+public class main {
+	public static void main(String[] args) {
+		//System.out.println("efficacite 90");
+		String[] test = new String [5];
+		test[0] = "un espace, deux  espaces, trois   espaces";
+		test[1] = " un espace à l'avant , espace à la fin ";
+		test[2] = "  deux espaces à l'avant, deux espaces à l'arrière  ";
+		test[3] = " des espaces séparés par un caractère seulement a b c d e f g ";
+		test[4] = " deux  espaces  séparés  par  un  caractère  seulement  a  b  c  d  e  f  g  ";
+		
+		for (String i : test) {
+			//System.out.println(Eraser_efficacite_90.erase(i)+"| 90");
+			System.out.println(erase44(i)+"| 44");
+			System.out.println(erase79(i)+"| 79");
+			System.out.println(erase90(i)+"| 90");
+			System.out.println(erase93(i)+"| 93");
+			System.out.println(erase107(i)+"| 107");
+			System.out.println(erase122(i)+"| 122");
+		}
+	}
+	
+	public static String erase44(String str) {
+		String resultat = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == 32) { //32 est le code ASCII pour un espace
+				if (i != 0 && str.charAt(i-1) == 32) {
+					resultat += str.charAt(i);
+				} else if (i+1 < str.length() && str.charAt(i+1) == 32) {
+					resultat += str.charAt(i);
+				}
+			} else {
+				resultat += str.charAt(i);
+			}
+		}
+		return resultat; //on retourne la nouvelle String
+	}
+	
+	public static String erase79(String str) {
+		String reponse = "";
+		int cpt=0;
+		String tmp="";
+		int longueur = str.length();
+		for(int i=0;i<longueur;i++){
+			if(str.charAt(i)==' '){
+				tmp+=" ";
+				cpt++;
+			}
+			else {
+				if(cpt>1) {
+					reponse+=tmp;
+				}
+				tmp="";
+				cpt=0;
+				reponse+=str.charAt(i);
+			}
+		}
+		if(cpt>1) {
+			reponse+=tmp;
+		}
+		return reponse;
+    }
+	
+	public static String erase90(String str) {
+    	/**
+    	 * utilise les expressions rÃ©guliÃ¨res : s'il y a un caractÃ¨re (n'importe lequel sauf espace, ou un debut de chaine) avant 
+    	* l'espace, et aprÃ¨s l'espace (n'importe quel caractÃ¨re sauf espace, ou une fin de chaine)
+    	* alors supprime l'espace 
+    	* $1 et $2 permettent de ne pas supprimer les caractÃ¨res avant et aprÃ¨s l'espace en question
+    	**/
+    	return str.replaceAll("([^\\s]|^)\\s([^\\s]|$)","$1$2");
+    }
+	
+	public static String erase93(String str) {
+		String nouvelle_chaine="";  
+		int taille = str.length();    
+
+		if(taille>0) {
+			//premier caractÃ¨re (si ce n'est pas un espace, ou qu'il y a un espace aprÃ¨s, alors on recopie)
+			if(str.charAt(0)!=' ' || str.charAt(1)==' ') {
+				nouvelle_chaine+=str.charAt(0);
+			}
+
+			// tous les caractÃ¨res sauf premier et dernier (si ce n'est pas un espace, ou qu'il y a un espace avant ou aprÃ¨s, alors on recopie)
+			for (int i=1; i<taille-1; i++) {
+				if(str.charAt(i)!= ' ' || str.charAt(i-1)== ' ' || str.charAt(i+1)== ' ') {
+					nouvelle_chaine+=str.charAt(i);
+				}
+			}
+			
+			// dernier caractÃ¨re (si ce n'est pas un espace, ou que c'est un espace avec un espace avant, alors on recopie)
+			if(str.charAt(taille-1)!=' ' || str.charAt(taille-2)==' ') {
+				nouvelle_chaine+=str.charAt(taille-1);
+			}
+		}
+		
+		return nouvelle_chaine;
+	}
+	
+	public static String erase107(String str) {
+        throw new UnsupportedOperationException("Unimplemented");
+    }
+	
+	public static String erase122(String str) {
+		String message = "";
+		int count = 0;
+		for(char lettre : str.toCharArray()) {
+			
+			if(lettre == ' ') {
+				count++;
+			} else {
+				if(count >= 2) {
+					while(count > 0) {
+						message += " ";
+						count--;
+					}
+					message += lettre;
+				} else {
+					message += lettre;
+					count = 0;
+				}
+				
+			}
+			
+		}
+        return message;
+    }
+	
+	
+	
+	
+	
+}
+
+=== C 
+
+le seul algorithme qui m'a été fourni en langage C ne marchait pas car il manquait le fichier .h 
+
+== méthode pour tester l'efficacité 
+
+Tester la complexité de l'algorithme. Une boucle de 0 à n est de complexité n et chaque opération compte pour 1 donc si on a un Si qui teste chaque caractère dans une boucle POUR la complexité est de 2n.
+
+
+

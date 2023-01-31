@@ -1,0 +1,97 @@
+:toc: 
+:toc-title: Sommaire
+
+= SAE 02 Exploration d'algorithmes 
+
+
+
+== efficacité
+
+évaluation des algorithmes 46, 90, 96 et 126 : 
+
+Problèmes avec les algorithmes :
+
+tout d'abord l'algorithme 126 sur python ne fonctionne pas car l'étudiant à un fait un import qui n'est pas dans le code et l'a renommé donc impossibilité de retracer l'import et donc le code ne fonctionne pas 
+
+l'algorithme 90 supprime un espace sur deux quand les espaces sont à intervales d'un caractère seulement, ex : " a b c d e " donne "a bc de"
+
+l'algorithme 46 ne supprime pas l'espace si il est au début de la chaine de caractères 
+
+l'algorithme 96 n'a aucun de problèmes 
+
+Complexité des algorithmes :
+
+
+46 de l'ordre O(2n) inclut les SI dans la boucle donc double le nomrbe d'opération à faire 
+
+90 de l'ordre O(n) la méthode replaceAll est évaluée à O(n)
+
+96  de l'ordre O(n+2) sort les SI de la boucle pour faire le début et la fin de la chaine de caractère 
+
+donc d'après de la complexité des algorithmes :
+
+• 1er : 96
+
+• 2eme : 90
+
+• 3eme : 46
+
+== simplicité
+
+évaluation des algorithmes 79, 93, 107, 122 :
+
+problèmes avec les algorithmes :
+
+79 : pas de problèmes à l'execution
+
+93 : pas de problèmes à l'execution 
+
+107 : algorithme non implémenté donc évaluation impossible
+
+122 : ne gère pas les espaces à la fin de la chaine de caractère 
+
+simplicité : 
+
+79 : code assez clair mais des noms de variable qui sont abstrait ( ex = tmp), pas de commentaires sur le code
+
+93 : code clair avec des commentaires et des noms de variables qui sont clairs et simples 
+
+107 : pas d'algorithme
+
+122 : Utilisation de if else imbriqué plusieurs fois qui rendent le code compliqué à lire des noms de variables simple et clair. Pas de commentaire sur le code
+
+Podium de simplicité 
+
+1er : 93
+
+2eme : 122
+
+3eme : 79
+
+== sobriété 
+
+évaluation des algorithmes 44, 63, 164
+
+problèmes avec les algorithmes :
+
+44 : pas de problèmes à l'exécution 
+
+63 : lancement impossible, une ressource e .h manque du fichier il ne se lance pas en conséquence 
+
+164 : pas de problèmes à l'exécution 
+
+sobriete :
+
+44 : O(n)
+
+63 : inconnu 
+
+164 : O(1)
+
+Podium de sobriete 
+
+1er : 164 
+
+2eme : 64
+
+3eme / éléminé : 63
