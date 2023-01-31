@@ -1,0 +1,14 @@
+INDEX VERSION 1.131+C:\Users\Etudiant\Documents\IHM_workspace\.metadata\.plugins\org.eclipse.jdt.core
+2785728018.index
+251060013.index
+249652049.index
+2370781377.index
+3545157780.index
+1252932996.index
+1808637612.index
+3802581513.index
+664982839.index
+2538538449.index
+2292262484.index
+1865797976.index
+2548577003.index

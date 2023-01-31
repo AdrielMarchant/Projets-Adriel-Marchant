@@ -1,0 +1,28 @@
+package version2;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class PlusMoinsApp extends Application {
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception{
+		
+		primaryStage.setTitle("PlusMoins");
+		primaryStage.show();
+	}
+	
+	@Override
+	public void init() throws Exception{
+		System.out.println("itit");
+	}
+	
+	@Override
+	public void stop() throws Exception{
+		System.out.println("stop");
+	}
+
+}

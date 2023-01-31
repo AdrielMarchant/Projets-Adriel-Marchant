@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/Etudiant/Documents/IHM_workspace/Blackjack.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Blackjack2022/BlackJack.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=Blackjack2022/src&lt;blackjack{BlackJackMain.java[BlackJackMain" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/Blackjack2022/.classpath"/>
+        <file path="/Blackjack2022/BlackJack.jardesc"/>
+        <javaElement handleIdentifier="=Blackjack2022/src"/>
+        <file path="/Blackjack2022/.project"/>
+    </selectedElements>
+</jardesc>

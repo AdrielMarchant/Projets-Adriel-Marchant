@@ -1,0 +1,23 @@
+.label{
+	-fx-text-fill : #0000ff;
+}
+.insetblock {
+	-fx-align:center;
+	-fx-border-color:green;
+	-fx-border-width:3px;
+	-fx-border-radius:10px;
+	-fx-padding: 5px 35px 10px;
+}
+.BorderPane{
+	-fx-padding: 0px 15px 0px;
+	
+}
+.titre{
+	-fx-padding:0px 0px 20px;
+}
+.bottom{
+	-fx-padding:10px 0px 5px;
+}
+.Bbar{
+	-fx-padding:0px 10px 0px;
+}

@@ -1,0 +1,7 @@
+1649921771668	Move file
+1649923151939	Rename resource 'BlackJack.fxml'
+1649925636189	Move elements
+1649925684393	Move compilation unit
+1649925695676	Rename package 'blackjack.main.view'
+1649928397244	Encapsulate field 'main'
+1650008185443	Encapsulate field 'quelBouton'

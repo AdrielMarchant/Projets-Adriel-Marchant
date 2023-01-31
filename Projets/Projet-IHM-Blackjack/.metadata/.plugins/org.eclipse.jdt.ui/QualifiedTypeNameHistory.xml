@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="version2.PlusMoinsController"/>
+    <fullyQualifiedTypeName name="java.awt.TextField"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.RadioButton"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.DatePicker"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
+    <fullyQualifiedTypeName name="javafx.stage.Stage"/>
+    <fullyQualifiedTypeName name="gestclub.view.SaisieMembreController"/>
+    <fullyQualifiedTypeName name="gestclub.model.Membre"/>
+    <fullyQualifiedTypeName name="gestclub.model.EtatMembre"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.Property"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.IntegerProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleIntegerProperty"/>
+    <fullyQualifiedTypeName name="javafx.util.converter.NumberStringConverter"/>
+    <fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
+    <fullyQualifiedTypeName name="javafx.scene.web.WebView"/>
+    <fullyQualifiedTypeName name="javafx.scene.web.WebEngine"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.ButtonType"/>
+</qualifiedTypeNameHistroy>

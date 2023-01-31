@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="900.0" prefHeight="473.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blackjack.view.MainController">
+   <top>
+      <MenuBar minWidth="900.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#actionRegles" text="Règles" />
+              <MenuItem mnemonicParsing="false" onAction="#actionRetour" text="Retour au menu" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionQuitter" text="Fermer" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane minWidth="900.0" prefHeight="200.0" prefWidth="900.0" style="-fx-background-color: green; -fx-border-color: red; -fx-border-width: 5;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="371.0" layoutY="156.0" opacity="0.63" text="BlackJack">
+               <font>
+                  <Font name="Niagara Solid" size="67.0" />
+               </font>
+            </Label>
+            <Label layoutX="403.0" text="Croupier" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="227.0" text="Joueur 1" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="227.0" text="Joueur 2" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="711.0" layoutY="227.0" text="Joueur 3" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="37.0" />
+               </font>
+            </Label>
+            <BorderPane layoutX="14.0" layoutY="277.0" prefHeight="166.0" prefWidth="265.0">
+               <bottom>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <buttons>
+                      <Button fx:id="butHit1" disable="true" mnemonicParsing="false" onAction="#actionHit1" text="hit" />
+                        <Button fx:id="butMise1" disable="true" mnemonicParsing="false" onAction="#actionMiseUn" prefHeight="25.0" prefWidth="91.0" text="mise" />
+                        <Button fx:id="butStand1" disable="true" mnemonicParsing="false" onAction="#actionStand1" text="se coucher" />
+                    </buttons>
+                  </ButtonBar>
+               </bottom>
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="miseUn" prefHeight="17.0" prefWidth="63.0" text="mise : 0" textFill="WHITE" />
+                        <Label fx:id="soldeUn" text="Solde : 100" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <TextArea fx:id="mainJ1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center></BorderPane>
+            <BorderPane layoutX="373.0" layoutY="46.0" prefHeight="90.0" prefWidth="162.0">
+               <center>
+                  <TextArea fx:id="mainC" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center></BorderPane>
+            <BorderPane layoutX="318.0" layoutY="277.0" prefHeight="165.0" prefWidth="265.0">
+               <bottom>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <buttons>
+                        <Button fx:id="butHit2" disable="true" mnemonicParsing="false" onAction="#actionHit2" text="hit" />
+                        <Button fx:id="butMise2" disable="true" mnemonicParsing="false" onAction="#actionMiseDeux" prefHeight="25.0" prefWidth="91.0" text="mise" />
+                        <Button fx:id="butStand2" disable="true" mnemonicParsing="false" onAction="#actionStand2" text="se coucher" />
+                     </buttons>
+                  </ButtonBar>
+               </bottom>
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="miseDeux" text="mise : 0" textFill="WHITE" />
+                        <Label fx:id="soldeDeux" text="Solde : 100" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <TextArea fx:id="mainJ2" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="621.0" layoutY="277.0" prefHeight="166.0" prefWidth="265.0">
+               <bottom>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <buttons>
+                        <Button fx:id="butHit3" disable="true" mnemonicParsing="false" onAction="#actionHit3" text="hit" />
+                        <Button fx:id="butMise3" disable="true" mnemonicParsing="false" onAction="#actionMiseTrois" prefHeight="25.0" prefWidth="91.0" text="mise" />
+                        <Button fx:id="butStand3" disable="true" mnemonicParsing="false" onAction="#actionStand3" text="se coucher" />
+                     </buttons>
+                  </ButtonBar>
+               </bottom>
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="miseTrois" text="mise : 0" textFill="WHITE" />
+                        <Label fx:id="soldeTrois" text="Solde : 100" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <TextArea fx:id="mainJ3" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <Label fx:id="etatBot" layoutX="14.0" layoutY="23.0" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="butStart" layoutX="14.0" layoutY="173.0" mnemonicParsing="false" onAction="#actionStart" style="-fx-background-color: yellow;" text="Démarrer la partie ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="butMises" disable="true" layoutX="387.0" layoutY="173.0" mnemonicParsing="false" onAction="#actionMises" opacity="0.0" style="-fx-background-color: yellow;" text="Mises placées">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="butContinuer" disable="true" layoutX="561.0" layoutY="173.0" mnemonicParsing="false" onAction="#continuer" opacity="0.0" style="-fx-background-color: yellow;" text="Continuer la partie">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
