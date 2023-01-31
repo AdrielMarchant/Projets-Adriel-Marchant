@@ -1,0 +1,44 @@
+:toc:
+:toc-title: Sommaire
+
+= Cahier Des Charges Utilisateur
+
+image::/img/Logo_IUT_Blagnac.png[Logo IUT, 100,50]
+
+== Contexte et présentation du projet 
+
+Dans le contexte de la prolifération des banques digitales, des banques comme la Banque Postale et le BNP Paribas se sont elles aussi lancées dans ces banques digitales grâce a des application mobiles telles que Ma French Bank et BNP Parisbas respectivement.
+    
+Le client DailyBank nous a demandé de développer une application JAVA-Oracle de gestion des comptes clients pour remplacer leurs outils obsolètes. Nous avons commme système existant une version antérieure de leur application Daily Bank.
+
+== Besoins et Contraites liés au Projet 
+
+=== Besoins 
+
+[underline]##La version existante de cette application permet de :##
+
+Modifier les informations client, Créer un nouveau client, Consulter un compte, Debiter un Compte et  Rendre un client inactif (Chef de projet).
+
+[underline]##Durant ce projet nous allons developper ces fonctionnalités :##
+
+-Le guichetier pourra : créditer/débiter un compte, créer un compte, Effectuer un virement de compte à compte, clôturer un compte, générer un relevé mensuel d'un compte en PDF et gérer les prélèvements automatiques
+
+-Le chef d'agence pourra : gérer les employés, effectuer un débit exceptionnel, simuler un emprunt et simuler une assurance d'emprunt (et des fonctionnalitées prévues dans le futur)
+
+-Un script batch qui permettra de : Générer les relevés mensuels en PDF et Exécuter les prélèvements automatiques.
+
+=== Contraintes 
+
+Le projet devra être codé en JAVA, utilisera de l'IHM avec JAVA et du sql pour acceder a une base de données.
+
+== Périmètre 
+
+Ce projet s'adresse à la société DailyBank et à leurs clients qui souhaitent utiliser leur système de banque digitale .
+
+== Fonctionnement 
+
+L'application aura la forme d'une fennêtre qui permettra aux utilisateurs de faire des débits, retraits et d'autres actions bancaires via des boutons sur l'interface de l'application. Différents type d'utilisateurs auront différents type d'accès à certaines fonctionnalités.
+
+== Délais 
+
+Ce projet est prévu d'être sans retard fini en mi-juins à la semaine 24 de l'année.
