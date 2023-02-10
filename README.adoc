@@ -11,4 +11,8 @@ SAE de développement d'une application : https://github.com/AdrielMarchant/Proj
 
 SAE Efficacité de code : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-Efficacit%C3%A9-de-code[Efficacité de code]
 
+SAE Occaski : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-Occaski[Occaski]
+
+SAE Systeme : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-Systeme[Systeme]
+
 Projet IHM JavaFx : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/Projets/Projet-IHM-Blackjack[BlackJack]
