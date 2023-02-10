@@ -1,0 +1,152 @@
+:toc:
+:toc-title: Sommaire
+
+= SAÉ - Scripts LID SQL
+
+Adriel Marchant et Thomas Masin - 1A
+
+== a)
+[source,SQL]
+----
+SELECT A.nomarticle, A.numarticle
+FROM ARTICLE A
+WHERE A.numarticle = (SELECT A.numarticle
+                      FROM ARTICLE A
+                      MINUS
+                      SELECT D.numarticle
+                      FROM DETAIL_COMMANDE D);
+
+----
+l'article 7 (yooner) n'a pas été commandé 
+[source,]
+----
+SELECT libelleCategorie,numCategorie
+FROM Categorie
+WHERE numCategorie IN (
+    SELECT numCategorie FROM Categorie
+    MINUS
+    SELECT numCategorie FROM Article);
+
+----
+les catégories 1,2,3,4,6,7,8,9,10,11,12,16,17,19,20,22,23,24,25 n’ont jamais été commandées 
+
+== b)
+[source,]
+----
+SELECT TO_CHAR(C.dateCommande, 'MM' ) AS Mois, SUM(C.montantTTC) AS Montant_ttc
+FROM Commande C,Client Cl
+WHERE Cl.numClient = C.numClient
+AND cl.adrpaysclient = 'Suisse'
+GROUP BY TO_CHAR(C.dateCommande, 'MM')
+ORDER BY TO_CHAR(C.dateCommande, 'MM') ASC;
+
+----
+[source,]
+----
+
+SELECT TO_CHAR(C.dateCommande, 'WW' ) AS Semaine, SUM(C.montantTTC) AS Montant_ttc
+FROM Commande C,Client Cl
+WHERE Cl.numClient = C.numClient
+AND cl.adrpaysclient = 'Suisse'
+GROUP BY TO_CHAR(C.dateCommande, 'WW')
+ORDER BY TO_CHAR(C.dateCommande, 'WW') ASC;
+
+----
+
+== c)
+[source,]
+----
+SELECT nomClient,numClient
+FROM Client
+WHERE numClient IN (
+    SELECT numClient FROM Client
+    MINUS
+    SELECT numClient FROM Commande );
+
+----
+
+== e)
+[source,]
+----
+SELECT nomArticle
+FROM Article A, Categorie C
+WHERE NOT EXISTS
+    (SELECT codeTaille
+    FROM variante_article
+    WHERE codeTaille BETWEEN 8 AND 17
+    MINUS
+    SELECT codeTaille
+    FROM Variante_Article V2
+    WHERE V2.numArticle = A.numArticle
+    )
+AND A.numCategorie = C.numCategorie
+AND c.libellecategorie = 'Chaussures';
+
+----
+
+== f)
+[source,]
+----
+SELECT DISTINCT C.numCommande FROM Commande C, Detail_Commande DC
+WHERE C.numCommande = DC.numCommande
+AND dc.quantitelivree = 0;
+
+----
+[source,]
+----
+SELECT DISTINCT C.numCommande FROM Commande C, Detail_Commande DC
+WHERE C.numCommande = DC.numCommande
+AND DC.quantiteLivree < DC.quantiteCommandee
+ORDER BY C.numCommande ASC;
+
+----
+[source,]
+----
+SELECT DISTINCT C.numCommande FROM Commande C, Detail_Commande DC
+WHERE C.numCommande = DC.numCommande
+AND DC.quantiteLivree > DC.quantiteCommandee
+ORDER BY C.numCommande ASC;
+
+----
+
+== g)
+[source,]
+----
+SELECT E.codeTypeTVA,SUM(DC.quantiteLivree * TV.prixVente) 
+FROM Commande C,Client Cl, Etiquette E, tarif_vente TV,Detail_Commande DC
+WHERE Cl.codeEtiquette = E.codeEtiquette
+AND Cl.numClient = C.numClient
+AND C.numCommande = DC.numCommande
+AND DC.numArticle = TV.numArticle
+GROUP BY E.codeTypeTVA
+
+----
+
+== h)
+[source,]
+----
+SELECT DC.NumArticle ,COUNT(DC.numArticle) 
+FROM DETAIL_COMMANDE DC 
+GROUP BY DC.numArticle 
+HAVING COUNT(DC.numArticle) = (
+    SELECT MAX(COUNT(DC.numArticle)) 
+    FROM DETAIL_COMMANDE DC 
+    GROUP BY DC.numArticle
+);
+
+----
+
+== i)
+[source,]
+----
+SELECT DC.NumArticle ,SUM(DC.QUANTITECOMMANDEE) 
+FROM DETAIL_COMMANDE DC 
+GROUP BY DC.numArticle 
+HAVING SUM(DC.numArticle) = (
+    SELECT MAX(SUM(DC.numArticle)) 
+    FROM DETAIL_COMMANDE DC 
+    GROUP BY DC.numArticle
+);
+
+----
+
