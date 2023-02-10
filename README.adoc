@@ -2,6 +2,8 @@
 Projets réalisés à l'iut et projets personel
 ----------------------------
 
+Durant mes études de BUT j'ai réalisé de multiples projets et SAE (Situation d'Apprendtissage et d'Evalutation ) dans des langages diverses tels que le Java/JavaFx, le Python, le HTML, Le CSS, le PHP et SQL.
+
 
 SAE de JavaFx : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-DailyBank[DailyBank]
 
