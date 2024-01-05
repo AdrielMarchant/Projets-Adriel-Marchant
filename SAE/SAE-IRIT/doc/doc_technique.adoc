@@ -1,0 +1,131 @@
+= Doc technique
+:incremental:
+:numbered:
+:TOC:
+:TOC-title: Sommaire
+
+Certaines parties proviennent directement du repository gitlab de l'IRIT
+Elles seront marquées par un "*"
+
+## Structure du projet*
+
+- ./Bac_A_Sable : Previous module 1 version 
+
+- ./doc : Folder containing uml diagrams (voir https://github.com/AurelienSP/SAE-S5-IRIT-G2/blob/main/doc/[ici])
+
+- ./Resources : Files containing database data (voir https://github.com/AurelienSP/SAE-S5-IRIT-G2/blob/main/Resources/[ici])
+
+- ./src : Java project (voir prochaine section)
+
+## Projet Java*
+
+### Structure des dossiers
+
+Vous pouvez choisir 2 programmes pour démarrer l'application de l'IRIT :
+
+- `fr.irit.PolyglotCli` is a CLI version of the app where you can put query in parameter
+- `fr.irit.App` is for development use, you have to put the query in the code and then run the app
+
+Ou le programme pour démarrer l'application IHM
+
+- `com.main.irit.irit.main.iritMainApplication.java`
+
+```txt
+└──src
+    ├── main
+    |   ├── antlr4
+    |   ├── java
+    |   |   ├── fr.irit.App (Main)
+    |   |   ├── fr.irit.PolyglotCli (Main)
+    |   |   ├── fr.irit.algebraictree (Algebraic tree classes)
+    |   |   ├── fr.irit.commands (CLI commands classes)
+    |   |   ├── fr.irit.module1 (module 1 classes)
+    |   |   ├── fr.irit.module2 (module 2 classes)
+    |   |   └── fr.irit.module3 (modules 3 classes)
+    |   └── moduleInterface
+    |       ├── fxgraph/ (librairie pour génerer l'arbre)
+    |       ├── com.main.irit.irit.main.view.fxm (FXML de l'app)
+    |       ├── com.main.irit.irit.main.iritMainApplication.java (Main)
+    |       └── com.main.irit.irit.main.iritMainController.java (Controller)
+    └── test
+        ├── java
+        |   ├── fr.irit.module1
+        |   |   ├── algebraictree.TableTest.java
+        |   |   └── GlobalAlgebraicTreeTest.java
+        |   ├── fr.irit.module2.MultistoreGlobalAlgebraicTreeTest.java
+        |   └── AppTest.java
+        ├── moduleInterface
+        |   └── com.main.irit.iritMainApplicationTest.java
+```
+
+### Librairie FXGraph
+
+La librairie FXGraph est la librairie utilisée lors de la création de l'arbre algébrique. 
+Dans le cadre de la SAE, nous avons eu à modifier ou ajouter du code dans la librairie.
+
+```txt
+└──fxgraph
+    ├── cells (les cellules du graphe)
+    ├── edges (les liens entre les cellules)
+    ├── graph (gestion du graphe)
+    └── layout
+```
+
+### Tests (instructions du repository gitlab de l'IRIT)*
+Unit tests are execute using the JUnit framework under the folder ./src/test
+
+They are automatically run when you compile the app with maven (mvn install or mvn compile).
+
+### Command Line Interface (CLI) (instructions du repository gitlab de l'IRIT)*
+
+Main file **fr.irit.PolyglotCli** allow launch the application as a command line interface.
+
+For create the CLI we use a tool named https://picocli.info/[Picocli]
+
+All CLI commands are defined under the folder **fr.irit.commands**
+
+```
+Usage: java -jar polyglot.jar [-h] [COMMAND]
+Commands:
+- run (run a sql or mongo query)
+  ├── Usage: java -jar polyglot.jar run <query> [-gt] [-mt] [-tt] [--time] [--help]
+  ├── Parameters:
+  |   <query>               Database query (ex: SELECT * FROM Customers)
+  └── Options:
+      -gt, --globalTree     Print global tree
+      -h, --help            display this help message
+      -mt, --multistoreTree Print multi-store tree
+      --target-db-name=<TARGET_DB_NAME>
+                            Target database name (default : DB1)
+      --target-db-type=<TARGET_DB_TYPE>
+                            Target database type (default : RELATIONAL)
+      --time                Show execution time
+      -tt, --transferTree   Print transfer tree
+ 
+- unified-view (Display polystore unified view)
+  ├── Usage: java -jar polyglot.jar unified-view <dbType> [--help] [-pimpl]
+  ├── Parameters:
+  |   <dbType>              Database type (relational or document)
+  └── Options:
+      -h, --help   display this help message
+      -pimpl, --physical-implementation
+               show physical implementation in addition of unified view
+    
+```
+
+### ANTLR (instructions du repository gitlab de l'IRIT)*
+https://antlr.org[ANTLR] is a parser generator tool that we use for read and recognize DB Queries (sql for the moment)
+to translate it into a structured tree.
+
+<u>How to use it ?</u>
+
+Write a .g4 grammar file (lexer & parser rules) under ./src/main/antlr4
+and generate parser with following cmd :
+```shell
+mvn generate-sources
+```
+Copy newly generated antlr folder (here : ./target/generated-sources/antlr4)
+to antlr4 folder in java folder
+(replace : ./src/main/java/fr/irit/module1/antlr4)
+
+
