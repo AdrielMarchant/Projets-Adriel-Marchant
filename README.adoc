@@ -21,9 +21,13 @@ SAE IRIT : https://github.com/Aadroman/SAE-S5-IRIT-G2[IRIT]
 
 SAE Noskia : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2[Noskia]
 
+SAE Bibliotheque : https://github.com/SOLUPRED3/SAE-Dev-S6[Bibliotheque]
+
 Projet IHM JavaFx : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/Projets/Projet-IHM-Blackjack[BlackJack]
 
 Projet de Bot Discord : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/Projets/Bot-Discord[BotDiscord]
+
+
 
 
 
