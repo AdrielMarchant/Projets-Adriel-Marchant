@@ -5,9 +5,9 @@ Projets réalisés à l'iut et projets personel
 Durant mes études de BUT j'ai réalisé de multiples projets et SAE (Situation d'Apprendtissage et d'Evalutation ) dans des langages diverses tels que le Java/JavaFx, le Python, le HTML, Le CSS, le PHP et SQL.
 
 
-SAE de JavaFx : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-DailyBank[DailyBank]
+SAE de JavaFx : https://github.com/IUT-Blagnac/sae2022-1A02[DailyBank]
 
-SAE de développement d'une application : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-DevApp[DevApp]
+SAE de développement d'une application : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2[DevApp]
 
 SAE Efficacité de code : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-Efficacit%C3%A9-de-code[Efficacité de code]
 
@@ -17,7 +17,7 @@ SAE Systeme : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/mai
 
 SAE Projet : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-Projet[Projet]
 
-SAE IRIT : https://github.com/AdrielMarchant/Projets-Adriel-Marchant/tree/main/SAE/SAE-IRIT[IRIT]
+SAE IRIT : https://github.com/Aadroman/SAE-S5-IRIT-G2[IRIT]
 
 SAE Noskia : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2[Noskia]
 
